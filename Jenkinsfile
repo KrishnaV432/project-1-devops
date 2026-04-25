@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/KrishnaV432/project-1-devops.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh './mvnw clean package -DskipTests'
