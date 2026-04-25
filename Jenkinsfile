@@ -25,7 +25,7 @@ pipeline {
             steps {
                 sh 'docker stop petclinic || true'
                 sh 'docker rm petclinic || true'
-                sh 'docker run -d -p 8081:8080 --name petclinic spring-project:v1'
+                sh 'docker run -d -p 8085:8085 --name petclinic spring-project:v1'
             }
         }
     }
